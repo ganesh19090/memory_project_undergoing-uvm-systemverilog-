@@ -1,0 +1,165 @@
+cd
+cd {D:\gvim new\UVM\resource_db}
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 15:10:20 on Dec 16,2025
+# vlog -reportprogress 300 list.svh "+incdir+C:/Users/91935/Desktop/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:10:21 on Dec 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi "+UVM_TESTNAME=mem_wr_rd_test" "+UVM_RESOURCE_DB_TRACE" 
+# Start time: 15:10:21 on Dec 16,2025
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_20764\win64_gcc-10.3.0\export_tramp.dll
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/resource_db/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/resource_db/work.list_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/resource_db/work.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.list_svh_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top
+# Compiling C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_20764\win64_gcc-10.3.0\exportwrapper.c
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_20764\win64_gcc-10.3.0\vsim_auto_compile.dll
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_wr_rd_test...
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/SET] Resource 'INT.count' (type int) set by <unknown> = (int) 10
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/SET] Resource 'INT.num_tx' (type int) set by <unknown> = (int) 20
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/SET] Resource 'STRING.name' (type string) set by <unknown> = (string) UVM_THY
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/RDBYNAM] Resource 'INT.count' (type int) read by uvm_test_top = (int) 10
+# UVM_INFO mem_wr_rd_test.sv(56) @ 0: uvm_test_top [mem_wr_rd_test] count_in_test=10
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/RDBYNAM] Resource 'INT.num_tx' (type int) read by uvm_test_top = (int) 20
+# UVM_INFO mem_wr_rd_test.sv(63) @ 0: uvm_test_top [mem_wr_rd_test] num_tx_test=20
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_resource_db.svh(121) @ 0: reporter [RSRCDB/RDBYNAM] Resource 'STRING.name' (type string) read by uvm_test_top = (string) UVM_THY
+# UVM_INFO mem_wr_rd_test.sv(70) @ 0: uvm_test_top [mem_wr_rd_test] name_in_test=UVM_THY
+# UVM_INFO mem_wr_rd_test.sv(72) @ 0: uvm_test_top [mem_wr_rd_test] build_phase verified
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [mem_env] build_phase verified
+# UVM_INFO mem_agent.sv(23) @ 0: uvm_test_top.mem_env_h.mem_agent_h [mem_agent] build_phase verified
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] build_phase verified
+# UVM_INFO mem_mon.sv(13) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_mon_h [mem_mon] build_phase verified
+# UVM_INFO mem_agent.sv(29) @ 0: uvm_test_top.mem_env_h.mem_agent_h [mem_agent] connect_phase verified
+# UVM_INFO mem_env.sv(21) @ 0: uvm_test_top.mem_env_h [mem_env] connect_phase verified
+# UVM_INFO mem_wr_rd_test.sv(77) @ 0: uvm_test_top [mem_wr_rd_test] connect_phase verified
+# UVM_INFO mem_wr_rd_test.sv(82) @ 0: uvm_test_top [mem_wr_rd_test] end_of_elaboration_phase verified
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_wr_rd_test          -     @334 
+#   mem_env_h                mem_env                 -     @361 
+#     mem_agent_h            mem_agent               -     @387 
+#       mem_drv_h            mem_drv                 -     @408 
+#         rsp_port           uvm_analysis_port       -     @427 
+#         seq_item_port      uvm_seq_item_pull_port  -     @417 
+#       mem_mon_h            mem_mon                 -     @399 
+#       mem_sqr_h            uvm_sequencer           -     @437 
+#         rsp_export         uvm_analysis_export     -     @446 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @564 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO mem_wr_rd_test.sv(88) @ 0: uvm_test_top [mem_wr_rd_test] start_of_simulation_phase verified
+# UVM_INFO mem_wr_rd_test.sv(95) @ 0: uvm_test_top [mem_wr_rd_test] run_phase verified
+# UVM_INFO mem_wr_rd_test.sv(100) @ 0: uvm_test_top [mem_wr_rd_test] run_phase of mem_wr_rd_test is has raised objection
+# UVM_INFO mem_mon.sv(18) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_mon_h [mem_mon] run_phase verified
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] run_phase verified
+# UVM_INFO mem_wr_rd_seq.sv(13) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_wr_rd_seq_h [mem_wr_rd_seq] pre_body executed
+# UVM_INFO mem_wr_rd_seq.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_wr_rd_seq_h [mem_wr_rd_seq] body executed
+# -----------------------------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                                       
+# -----------------------------------------------------------------------------------------------------------
+# req                            mem_tx    -     @629                                                        
+#   wr_rd                        integral  1     'h1                                                         
+#   wr_data                      integral  16    'h6b4                                                       
+#   addr                         integral  5     'h13                                                        
+#   rd_data                      integral  16    'h0                                                         
+#   begin_time                   time      64    0                                                           
+#   depth                        int       32    'd2                                                         
+#   parent sequence (name)       string    15    mem_wr_rd_seq_h                                             
+#   parent sequence (full name)  string    60    uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h.mem_wr_rd_seq_h
+#   sequencer                    string    44    uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h                
+# -----------------------------------------------------------------------------------------------------------
+# UVM_INFO mem_drv.sv(35) @ 10: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] tx is driven to dut using mem_intrf
+# -----------------------------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                                       
+# -----------------------------------------------------------------------------------------------------------
+# req                            mem_tx    -     @661                                                        
+#   wr_rd                        integral  1     'h0                                                         
+#   wr_data                      integral  16    'he592                                                      
+#   addr                         integral  5     'h13                                                        
+#   rd_data                      integral  16    'h0                                                         
+#   begin_time                   time      64    10                                                          
+#   depth                        int       32    'd2                                                         
+#   parent sequence (name)       string    15    mem_wr_rd_seq_h                                             
+#   parent sequence (full name)  string    60    uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h.mem_wr_rd_seq_h
+#   sequencer                    string    44    uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h                
+# -----------------------------------------------------------------------------------------------------------
+# UVM_INFO mem_drv.sv(35) @ 20: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] tx is driven to dut using mem_intrf
+# UVM_INFO mem_wr_rd_seq.sv(31) @ 20: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_wr_rd_seq_h [mem_wr_rd_seq] post_body executed
+# UVM_INFO mem_wr_rd_test.sv(112) @ 20: uvm_test_top [mem_wr_rd_test] run_phase of mem_wr_rd_test has droped objection
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_objection.svh(1270) @ 120: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO mem_wr_rd_test.sv(118) @ 120: uvm_test_top [mem_wr_rd_test] extract_phase verified
+# UVM_INFO mem_wr_rd_test.sv(123) @ 120: uvm_test_top [mem_wr_rd_test] check_phase verified
+# UVM_INFO mem_wr_rd_test.sv(128) @ 120: uvm_test_top [mem_wr_rd_test] report_phase of mem_wr_rd_test is verified
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_report_server.svh(847) @ 120: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   36
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [RSRCDB/RDBYNAM]     3
+# [RSRCDB/SET]     3
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# [mem_agent]     2
+# [mem_drv]     4
+# [mem_env]     2
+# [mem_mon]     2
+# [mem_wr_rd_seq]     3
+# [mem_wr_rd_test]    13
+# 
+# ** Note: $finish    : C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 120 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh line 517
