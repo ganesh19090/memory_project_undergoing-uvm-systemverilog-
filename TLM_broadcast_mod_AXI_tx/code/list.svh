@@ -1,0 +1,10 @@
+`include "uvm_pkg.sv"
+//`include "uvm_macros.svh"
+import uvm_pkg::*;
+`include "axi_tx.sv"
+`include "axi_producer.sv"
+`include "my_sub.sv"
+`include "axi_agent.sv"
+`include "axi_env.sv"
+`include "axi_test.sv"
+`include "top.sv"
