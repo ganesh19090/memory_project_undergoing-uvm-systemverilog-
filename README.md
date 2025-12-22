@@ -24,55 +24,55 @@ It is intended for **learning, practice, and portfolio showcase** in the semicon
 memory_project_undergoing-uvm-systemverilog
 │
 ├── phase1/
-│ └── Basic memory RTL and initial testbench
+│ └── Basic memory RTL and initial testbench/
 │
 ├── phase2/
-│ └── Introduction of UVM components
+│ └── Introduction of UVM components/
 │
 ├── phase3/
-│ └── Enhanced UVM environment and sequences
+│ └── Enhanced UVM environment and sequences/
 │
 ├── UVM_config_db/
-│ └── Examples using uvm_config_db
+│ └── Examples using uvm_config_db/
 │
 ├── resource_db/
-│ └── Examples using uvm_resource_db
+│ └── Examples using uvm_resource_db/
 │
 ├── auto_data_retrival/
-│ └── Automatic data handling mechanisms
+│ └── Automatic data handling mechanisms/
 │
 ├── AXI_interface/
-│ └── AXI-based interface experiments
+│ └── AXI-based interface experiments/
 │
 ├── Overriding/
-│ └── Factory and type overriding examples
+│ └── Factory and type overriding examples/
 │
-├── memory.v
-│ └── Memory RTL (DUT)
+├── memory.v/
+│ └── Memory RTL (DUT)/
 │
-├── mem_tx.sv
-│ └── Sequence item (transaction)
+├── mem_tx.sv/
+│ └── Sequence item (transaction)/
 │
-├── mem_agent.sv
-│ └── Agent (sequencer, driver, monitor, coverage)
+├── mem_agent.sv/
+│ └── Agent (sequencer, driver, monitor, coverage)/
 │
-├── mem_mon.sv
-│ └── Monitor with analysis port
+├── mem_mon.sv/
+│ └── Monitor with analysis port/
 │
-├── mem_sbd.sv
-│ └── Scoreboard
+├── mem_sbd.sv/
+│ └── Scoreboard/
 │
-├── mem_assertion.sv
-│ └── SystemVerilog Assertions
+├── mem_assertion.sv/
+│ └── SystemVerilog Assertions/
 │
-├── test_lib.sv
-│ └── Test cases and sequences
+├── test_lib.sv/
+│ └── Test cases and sequences/
 │
-├── top.sv
-│ └── Top module (DUT + interface + UVM start)
+├── top.sv/
+│ └── Top module (DUT + interface + UVM start)/
 │
-├── run.do
-│ └── Questa/ModelSim simulation script
+├── run.do/
+│ └── Questa/ModelSim simulation script/
 │
 └── README.md
 
