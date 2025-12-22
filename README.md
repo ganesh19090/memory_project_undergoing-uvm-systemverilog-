@@ -21,58 +21,28 @@ It is intended for **learning, practice, and portfolio showcase** in the semicon
 
 ## 📁 Repository Structure
 
-memory_project_undergoing-uvm-systemverilog
+├── phase1/ # Basic memory RTL and initial testbench/
+├── phase2/ # Introduction of UVM components/
+├── phase3/ # Enhanced UVM environment and sequences/
+├── phase4/ # Implemented assertions and scoreboard and obtained final result/
 │
-├── phase1/
-│ └── Basic memory RTL and initial testbench/
+├── UVM_config_db/ # Examples using uvm_config_db/
+├── resource_db/ # Examples using uvm_resource_db/
+├── auto_data_retrival/ # Automatic data handling mechanisms/
 │
-├── phase2/
-│ └── Introduction of UVM components/
+├── AXI_interface/ # AXI-based interface experiments/
+├── Overriding/ # Factory and type overriding examples/
 │
-├── phase3/
-│ └── Enhanced UVM environment and sequences/
+├── memory.v # Memory RTL (DUT)/
+├── mem_tx.sv # Sequence item (transaction)/
+├── mem_agent.sv # Agent (sequencer, driver, monitor, coverage)/
+├── mem_mon.sv # Monitor with analysis port/
+├── mem_sbd.sv # Scoreboard/
+├── mem_assertion.sv # SystemVerilog Assertions/
 │
-├── UVM_config_db/
-│ └── Examples using uvm_config_db/
-│
-├── resource_db/
-│ └── Examples using uvm_resource_db/
-│
-├── auto_data_retrival/
-│ └── Automatic data handling mechanisms/
-│
-├── AXI_interface/
-│ └── AXI-based interface experiments/
-│
-├── Overriding/
-│ └── Factory and type overriding examples/
-│
-├── memory.v/
-│ └── Memory RTL (DUT)/
-│
-├── mem_tx.sv/
-│ └── Sequence item (transaction)/
-│
-├── mem_agent.sv/
-│ └── Agent (sequencer, driver, monitor, coverage)/
-│
-├── mem_mon.sv/
-│ └── Monitor with analysis port/
-│
-├── mem_sbd.sv/
-│ └── Scoreboard/
-│
-├── mem_assertion.sv/
-│ └── SystemVerilog Assertions/
-│
-├── test_lib.sv/
-│ └── Test cases and sequences/
-│
-├── top.sv/
-│ └── Top module (DUT + interface + UVM start)/
-│
-├── run.do/
-│ └── Questa/ModelSim simulation script/
+├── test_lib.sv # Test cases and sequences/
+├── top.sv # Top module (DUT + interface + UVM start)/
+├── run.do # Questa/ModelSim simulation script/
 │
 └── README.md
 
@@ -87,6 +57,7 @@ The verification environment follows standard UVM layering:
 - **Sequence & Sequencer**
 - **Driver**
 - **Monitor**
+- **Coverage**
 - **Agent**
 - **Environment**
 - **Scoreboard**
