@@ -1,0 +1,257 @@
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 12:43:11 on Dec 22,2025
+# vlog -reportprogress 300 list.svh "+incdir+C:/Users/91935/Desktop/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# ** Warning: seq_lib.sv(110): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module memory
+# -- Compiling module mem_assertion
+# -- Compiling interface mem_intf
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 12:43:13 on Dec 22,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+# End time: 12:43:21 on Dec 22,2025, Elapsed time: 0:16:28
+# Errors: 0, Warnings: 2
+# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi "+UVM_TESTNAME=mem_full_wr_rd_test" "+num_tx=16" 
+# Start time: 12:43:21 on Dec 22,2025
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_6764\win64_gcc-10.3.0\export_tramp.dll
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.list_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.list_svh_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.mem_intf
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.mem_intf
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.memory
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.memory
+# Refreshing D:/gvim new/UVM/mem_project_uvm_phase4/work.mem_assertion
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.mem_assertion
+# Compiling C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_6764\win64_gcc-10.3.0\exportwrapper.c
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_6764\win64_gcc-10.3.0\vsim_auto_compile.dll
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_full_wr_rd_test...
+# UVM_INFO test_lib.sv(160) @ 0: uvm_test_top [mem_full_wr_rd_test] build_phase verified
+# UVM_INFO mem_env.sv(17) @ 0: uvm_test_top.mem_env_h [mem_env] build_phase verified
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [mem_agent] build_phase verified
+# UVM_INFO mem_drv.sv(19) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] build_phase verified
+# UVM_INFO mem_mon.sv(24) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_mon_h [mem_drv] build_phase verified
+# UVM_INFO mem_agent.sv(30) @ 0: uvm_test_top.mem_env_h.mem_agent_h [mem_agent] connect_phase verified
+# UVM_INFO mem_env.sv(22) @ 0: uvm_test_top.mem_env_h [mem_env] connect_phase verified
+# UVM_INFO test_lib.sv(165) @ 0: uvm_test_top [mem_full_wr_rd_test] connect_phase verified
+# UVM_INFO test_lib.sv(170) @ 0: uvm_test_top [mem_full_wr_rd_test] end_of_elaboration_phase verified
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_full_wr_rd_test     -     @335 
+#   mem_env_h                mem_env                 -     @356 
+#     mem_agent_h            mem_agent               -     @367 
+#       mem_cov_h            mem_cov                 -     @388 
+#         analysis_imp       uvm_analysis_imp        -     @397 
+#       mem_drv_h            mem_drv                 -     @416 
+#         rsp_port           uvm_analysis_port       -     @435 
+#         seq_item_port      uvm_seq_item_pull_port  -     @425 
+#       mem_mon_h            mem_mon                 -     @407 
+#         ap_h               uvm_analysis_port       -     @587 
+#       mem_sqr_h            uvm_sequencer           -     @445 
+#         rsp_export         uvm_analysis_export     -     @454 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @572 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_sbd_h              mem_sbd                 -     @376 
+#       analysis_export      uvm_analysis_imp        -     @609 
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(176) @ 0: uvm_test_top [mem_full_wr_rd_test] start_of_simulation_phase verified
+# UVM_INFO test_lib.sv(183) @ 0: uvm_test_top [mem_full_wr_rd_test] run_phase verified
+# UVM_INFO test_lib.sv(188) @ 0: uvm_test_top [mem_full_wr_rd_test] run_phase of mem_full_wr_rd_test is has raised objection
+# UVM_INFO mem_drv.sv(23) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] run_phase verified
+# UVM_INFO seq_lib.sv(111) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_full_wr_rd_seq_h [RAND VALUE] addr_q='{14, 2, 11, 7, 10, 0, 1, 5, 4, 15, 13, 3, 6, 9, 12, 8}
+# UVM_INFO seq_lib.sv(114) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_full_wr_rd_seq_h [mem_full_wr_rd_seq] WR_TX start
+# UVM_INFO mem_drv.sv(42) @ 10: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 25: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=e data=1ad0
+# UVM_INFO mem_sbd.sv(55) @ 25: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=e data=1ad0
+# ASSERTION PASSED: Valid write (addr_i=e, wdata_i=1ad0) at 25
+# UVM_INFO mem_drv.sv(42) @ 35: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 45: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=2 data=0e07
+# UVM_INFO mem_sbd.sv(55) @ 45: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=2 data=e07
+# ASSERTION PASSED: Valid write (addr_i=2, wdata_i=e07) at 45
+# UVM_INFO mem_drv.sv(42) @ 55: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 65: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=b data=8cb6
+# UVM_INFO mem_sbd.sv(55) @ 65: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=b data=8cb6
+# ASSERTION PASSED: Valid write (addr_i=b, wdata_i=8cb6) at 65
+# UVM_INFO mem_drv.sv(42) @ 75: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 85: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=7 data=e6e0
+# UVM_INFO mem_sbd.sv(55) @ 85: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=7 data=e6e0
+# ASSERTION PASSED: Valid write (addr_i=7, wdata_i=e6e0) at 85
+# UVM_INFO mem_drv.sv(42) @ 95: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 105: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=a data=c7a7
+# UVM_INFO mem_sbd.sv(55) @ 105: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=a data=c7a7
+# ASSERTION PASSED: Valid write (addr_i=a, wdata_i=c7a7) at 105
+# UVM_INFO mem_drv.sv(42) @ 115: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 125: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=0 data=cd5c
+# UVM_INFO mem_sbd.sv(55) @ 125: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=0 data=cd5c
+# ASSERTION PASSED: Valid write (addr_i=0, wdata_i=cd5c) at 125
+# UVM_INFO mem_drv.sv(42) @ 135: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 145: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=1 data=7131
+# UVM_INFO mem_sbd.sv(55) @ 145: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=1 data=7131
+# ASSERTION PASSED: Valid write (addr_i=1, wdata_i=7131) at 145
+# UVM_INFO mem_drv.sv(42) @ 155: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 165: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=5 data=adbb
+# UVM_INFO mem_sbd.sv(55) @ 165: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=5 data=adbb
+# ASSERTION PASSED: Valid write (addr_i=5, wdata_i=adbb) at 165
+# UVM_INFO mem_drv.sv(42) @ 175: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 185: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=4 data=4e8f
+# UVM_INFO mem_sbd.sv(55) @ 185: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=4 data=4e8f
+# ASSERTION PASSED: Valid write (addr_i=4, wdata_i=4e8f) at 185
+# UVM_INFO mem_drv.sv(42) @ 195: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 205: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=f data=7cbf
+# UVM_INFO mem_sbd.sv(55) @ 205: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=f data=7cbf
+# ASSERTION PASSED: Valid write (addr_i=f, wdata_i=7cbf) at 205
+# UVM_INFO mem_drv.sv(42) @ 215: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 225: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=d data=f1b7
+# UVM_INFO mem_sbd.sv(55) @ 225: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=d data=f1b7
+# ASSERTION PASSED: Valid write (addr_i=d, wdata_i=f1b7) at 225
+# UVM_INFO mem_drv.sv(42) @ 235: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 245: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=3 data=911a
+# UVM_INFO mem_sbd.sv(55) @ 245: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=3 data=911a
+# ASSERTION PASSED: Valid write (addr_i=3, wdata_i=911a) at 245
+# UVM_INFO mem_drv.sv(42) @ 255: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 265: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=6 data=0311
+# UVM_INFO mem_sbd.sv(55) @ 265: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=6 data=311
+# ASSERTION PASSED: Valid write (addr_i=6, wdata_i=311) at 265
+# UVM_INFO mem_drv.sv(42) @ 275: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 285: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=9 data=6999
+# UVM_INFO mem_sbd.sv(55) @ 285: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=9 data=6999
+# ASSERTION PASSED: Valid write (addr_i=9, wdata_i=6999) at 285
+# UVM_INFO mem_drv.sv(42) @ 295: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 305: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=c data=3233
+# UVM_INFO mem_sbd.sv(55) @ 305: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=c data=3233
+# ASSERTION PASSED: Valid write (addr_i=c, wdata_i=3233) at 305
+# UVM_INFO mem_drv.sv(42) @ 315: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 325: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=WR addr=8 data=1521
+# UVM_INFO mem_sbd.sv(55) @ 325: uvm_test_top.mem_env_h.mem_sbd_h [SBD] WRITE addr=8 data=1521
+# UVM_INFO seq_lib.sv(121) @ 325: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@mem_full_wr_rd_seq_h [mem_full_wr_rd_seq] RD_TX start
+# ASSERTION PASSED: Valid write (addr_i=8, wdata_i=1521) at 325
+# UVM_INFO mem_drv.sv(42) @ 335: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 345: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=e data=1ad0
+# UVM_INFO mem_sbd.sv(66) @ 345: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=1
+# UVM_INFO mem_drv.sv(42) @ 355: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 365: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=2 data=0e07
+# UVM_INFO mem_sbd.sv(66) @ 365: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=2
+# UVM_INFO mem_drv.sv(42) @ 375: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 385: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=b data=8cb6
+# UVM_INFO mem_sbd.sv(66) @ 385: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=3
+# UVM_INFO mem_drv.sv(42) @ 395: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 405: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=7 data=e6e0
+# UVM_INFO mem_sbd.sv(66) @ 405: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=4
+# UVM_INFO mem_drv.sv(42) @ 415: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 425: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=a data=c7a7
+# UVM_INFO mem_sbd.sv(66) @ 425: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=5
+# UVM_INFO mem_drv.sv(42) @ 435: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 445: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=0 data=cd5c
+# UVM_INFO mem_sbd.sv(66) @ 445: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=6
+# UVM_INFO mem_drv.sv(42) @ 455: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 465: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=1 data=7131
+# UVM_INFO mem_sbd.sv(66) @ 465: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=7
+# UVM_INFO mem_drv.sv(42) @ 475: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 485: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=5 data=adbb
+# UVM_INFO mem_sbd.sv(66) @ 485: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=8
+# UVM_INFO mem_drv.sv(42) @ 495: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 505: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=4 data=4e8f
+# UVM_INFO mem_sbd.sv(66) @ 505: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=9
+# UVM_INFO mem_drv.sv(42) @ 515: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 525: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=f data=7cbf
+# UVM_INFO mem_sbd.sv(66) @ 525: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=10
+# UVM_INFO mem_drv.sv(42) @ 535: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 545: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=d data=f1b7
+# UVM_INFO mem_sbd.sv(66) @ 545: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=11
+# UVM_INFO mem_drv.sv(42) @ 555: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 565: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=3 data=911a
+# UVM_INFO mem_sbd.sv(66) @ 565: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=12
+# UVM_INFO mem_drv.sv(42) @ 575: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 585: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=6 data=0311
+# UVM_INFO mem_sbd.sv(66) @ 585: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=13
+# UVM_INFO mem_drv.sv(42) @ 595: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 605: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=9 data=6999
+# UVM_INFO mem_sbd.sv(66) @ 605: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=14
+# UVM_INFO mem_drv.sv(42) @ 615: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 625: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=c data=3233
+# UVM_INFO mem_sbd.sv(66) @ 625: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=15
+# UVM_INFO mem_drv.sv(42) @ 635: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv] drive_tx is executed
+# UVM_INFO mem_drv.sv(54) @ 645: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [mem_drv_drv_tx_task] wr_rd=RD addr=8 data=1521
+# UVM_INFO mem_sbd.sv(66) @ 645: uvm_test_top.mem_env_h.mem_sbd_h [mem_sbd] mismatching=16
+# UVM_INFO test_lib.sv(200) @ 645: uvm_test_top [mem_full_wr_rd_test] run_phase of mem_full_wr_rd_test has droped objection
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_objection.svh(1270) @ 745: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO test_lib.sv(206) @ 745: uvm_test_top [mem_full_wr_rd_test] extract_phase verified
+# UVM_INFO test_lib.sv(211) @ 745: uvm_test_top [mem_full_wr_rd_test] check_phase verified
+# UVM_INFO test_lib.sv(216) @ 745: uvm_test_top [mem_full_wr_rd_test] report_phase of mem_full_wr_rd_test is verified
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_report_server.svh(847) @ 745: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  120
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RAND VALUE]     1
+# [RNTST]     1
+# [SBD]    16
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# [mem_agent]     2
+# [mem_drv]    35
+# [mem_drv_drv_tx_task]    32
+# [mem_env]     2
+# [mem_full_wr_rd_seq]     2
+# [mem_full_wr_rd_test]    10
+# [mem_sbd]    16
+# 
+# ** Note: $finish    : C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 745 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh line 517
+# Causality operation skipped due to absence of debug database file
